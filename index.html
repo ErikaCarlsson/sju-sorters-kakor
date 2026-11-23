@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sju sorters kakor!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sidhuvud med logotyp, sidans namn och meny. -->
+    <header class="site-header">
+      <div class="site-header-content">
+        <div class="logo">
+          <img src="bilder/logo.png" alt="Sju sorters kakors logotyp" />
+        </div>
+        <p class="site-name">Sju sorters kakor</p>
+        <nav class="main-menu">
+          <a href="#toppen">Hem</a>
+          <a href="#recept">Alla recept</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Stor toppbild med rubrik och introduktion. -->
+    <section class="hero">
+      <h1 id="toppen">Sju sorters kakor</h1>
+      <p>
+        Att bjuda på sju sorters kakor är en klassisk svensk fikatradition och
+        syftar på det minsta antalet kaksorter som etiketten tidigare föreskrev
+        att kakfatet ska innehålla. Tanken är att erbjuda ett varierat urval av
+        småkakor så att det finns något för olika smaker: spröda, mjuka,
+        chokladiga, kryddiga och fruktiga kakor. Utöver småkakorna serveras även
+        vetebröd och tårta. Traditionen förknippas ofta med kafferep och
+        högtider men passar lika bra till vardagsfika eller kalas och har
+        funnits sedan 1800-talet.
+      </p>
+      <!-- Toppbilden är AI-genererad. -->
+      <p class="image-credit">Bild: AI-genererad</p>
+      <a href="#recept" class="hero-button">Se alla recept</a>
+    </section>
+    <!-- Här samlas resten av sidans innehåll. -->
+    <div class="site-container">
+      <!-- Receptmeny med klickbara bilder. -->
+      <h2 id="recept">Våra sju kakor</h2>
+      <div class="recipe-navigation">
+        <nav>
+          <ul>
+            <li>
+              <a href="#hallongrottor">
+                <img
+                  src="bilder/menybild_hallongrottor.jpg"
+                  alt="Hallongrottor"
+                  class="recipe-thumbnail"
+                />
+                <span>Hallongrottor</span>
+              </a>
+            </li>
+            <li>
+              <a href="#kolasnittar">
+                <img
+                  src="bilder/menybild_kolasnittar.jpg"
+                  alt="Kolasnittar"
+                  class="recipe-thumbnail"
+                />
+                <span>Kolasnittar</span>
+              </a>
+            </li>
+            <li>
+              <a href="#schackrutor">
+                <img
+                  src="bilder/menybild_schackrutor.jpg"
+                  alt="Schackrutor"
+                  class="recipe-thumbnail"
+                />
+                <span>Schackrutor</span>
+              </a>
+            </li>
+            <li>
+              <a href="#drommar">
+                <img
+                  src="bilder/menybild_drommar.jpg"
+                  alt="Drömmar"
+                  class="recipe-thumbnail"
+                />
+                <span>Drömmar</span>
+              </a>
+            </li>
+            <li>
+              <a href="#finska-pinnar">
+                <img
+                  src="bilder/menybild_finska-pinnar.jpg"
+                  alt="Finska pinnar"
+                  class="recipe-thumbnail"
+                />
+                <span>Finska pinnar</span>
+              </a>
+            </li>
+            <li>
+              <a href="#chokladsnittar">
+                <img
+                  src="bilder/menybild_chokladsnittar.jpg"
+                  alt="Chokladsnittar"
+                  class="recipe-thumbnail"
+                />
+                <span>Chokladsnittar</span>
+              </a>
+            </li>
+            <li>
+              <a href="#havreflarn-med-choklad">
+                <img
+                  src="bilder/menybild_havreflarn-med-choklad.jpg"
+                  alt="Havreflarn med choklad"
+                  class="recipe-thumbnail"
+                />
+                <span>Havreflarn med choklad</span>
+              </a>
+            </li>
+          </ul>
+          <p class="image-information">
+            Bilderna i receptmenyn är AI-genererade.
+          </p>
+        </nav>
+      </div>
+      <!-- Här börjar receptsamlingen. -->
+      <main>
+        <!-- Här börjar receptet för hallongrottor.
+             <article> samlar receptets innehåll.
+             Rubrikens id gör att receptmenyn kan länka hit.
+             Bilden har en beskrivande alt-text för ökad
+             tillgänglighet. -->
+        <article>
+          <!-- Samlar rubrik, beskrivning och antal kakor. -->
+          <div class="recipe-description">
+            <h2 id="hallongrottor">Hallongrottor</h2>
+            <p>
+              Hallongrottor är mördegskakor med en liten grop fylld med ljuvlig
+              hallonsylt. De är både enkla att baka och uppskattade på kakfatet.
+            </p>
+            <p><em>Ca 20-24 kakor</em></p>
+          </div>
+          <!-- Samlar bilden och recepttexten bredvid varandra. -->
+          <div class="recipe-layout">
+            <!-- Receptbilden placeras till vänster med CSS. -->
+            <figure>
+              <img
+                src="bilder/hallongrottor.jpg"
+                alt="Hallongrottor på ett kakfat."
+              />
+              <figcaption>Bilden är AI-genererad.</figcaption>
+            </figure>
+            <!-- Ingredienser och instruktioner grupperas
+                 så att deras placering kan styras med CSS.
+                 Ingredienser visas i en punktlista och
+                 instruktionerna i en numrerad lista. -->
+            <div class="recipe-content">
+              <div class="ingredients">
+                <h3>Ingredienser:</h3>
+                <ul>
+                  <li>200 g smör eller margarin</li>
+                  <li>1 dl strösocker</li>
+                  <li>2 tsk vaniljsocker</li>
+                  <li>4,5 dl vetemjöl</li>
+                  <li>1 tsk bakpulver</li>
+                  <li>1 dl fast hallonsylt</li>
+                </ul>
+              </div>
+              <div class="instructions">
+                <h3>Gör så här:</h3>
+                <ol>
+                  <li>Sätt ugnen på 200 °C.</li>
+                  <li>
+                    Arbeta snabbt ihop smör, socker, vaniljsocker, vetemjöl och
+                    bakpulver till en deg. Gärna i matberedare.
+                  </li>
+                  <li>
+                    Rulla degen till små bollar och lägg dem i små kakformar ca
+                    5 cm i diameter.
+                  </li>
+                  <li>
+                    Gör en grop i varje kaka med ett finger eller skaftet på en
+                    sked.
+                  </li>
+                  <li>Fyll groparna med hallonsylt.</li>
+                  <li>
+                    Grädda i cirka 12–15 minuter och låt sedan svalna på galler.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <!-- Länk tillbaka till sidans början. -->
+          <a href="#toppen" class="back-to-top"> Tillbaka till toppen </a>
+        </article>
+        <!-- Här börjar receptet för kolasnittar.
+             Samma semantiska struktur som i föregående
+             recept används.
+             Bilden har webboptimerats och har nu en
+             filstorlek på 87,9 kB. -->
+        <article>
+          <div class="recipe-description">
+            <h2 id="kolasnittar">Kolasnittar</h2>
+            <p>
+              Kolasnittar är avlånga lite sega småkakor med smak av sirap och
+              vanilj. De skärs i sneda bitar direkt när de kommer ut ur ugnen.
+            </p>
+            <p><em>Ca 20 kakor</em></p>
+          </div>
+          <div class="recipe-layout">
+            <figure>
+              <img
+                src="bilder/kolasnittar.jpg"
+                alt="Kolasnittar på ett kakfat."
+              />
+              <figcaption>Bilden är AI-genererad.</figcaption>
+            </figure>
+            <div class="recipe-content">
+              <div class="ingredients">
+                <h3>Ingredienser:</h3>
+                <ul>
+                  <li>100 g smör</li>
+                  <li>1 dl strösocker</li>
+                  <li>2 msk mörk sirap</li>
+                  <li>2,5 dl vetemjöl</li>
+                  <li>1 tsk bakpulver</li>
+                  <li>1 tsk vaniljsocker</li>
+                </ul>
+              </div>
+              <div class="instructions">
+                <h3>Gör så här:</h3>
+                <ol>
+                  <li>Sätt ugnen på 175 °C.</li>
+                  <li>Rör smör, socker och sirap mjukt.</li>
+                  <li>
+                    Blanda vetemjöl, bakpulver och vaniljsocker. Arbeta sedan
+                    ihop med smörsmeten till en deg.
+                  </li>
+                  <li>
+                    Dela degen i två delar och rulla dem till längder ca 40 cm
+                    långa.
+                  </li>
+                  <li>
+                    Lägg längderna på en plåt med bakplåtspapper och platta till
+                    dem.
+                  </li>
+                  <li>Grädda mitt i ugnen cirka 12 minuter.</li>
+                  <li>
+                    Låt kakorna svalna något och skär längderna i sneda bitar
+                    medan de fortfarande är varma.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <a href="#toppen" class="back-to-top"> Tillbaka till toppen </a>
+        </article>
+        <!-- Tre bilder som visar bakning och fika. -->
+        <div class="fika-images">
+          <figure>
+            <img
+              src="bilder/baka_schackrutor.jpg"
+              alt="Hand med vita naglar som knådar en deg."
+            />
+            <figcaption>Bildkälla: Pexels.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="bilder/ingredienser-unsplash.jpg"
+              alt="Baktillbehör: ägg, smör och mjöl."
+            />
+            <figcaption>Bildkälla: Unsplash.</figcaption>
+          </figure>
+          <figure>
+            <img src="bilder/mandlar.jpg" alt="Mandlar i en vit skål." />
+            <figcaption>Bildkälla: Pexels.</figcaption>
+          </figure>
+        </div>
+        <!-- Här börjar receptet för schackrutor.
+             Samma semantiska struktur som i föregående recept används.
+             Varje bild har ett eget <figure>-element med tillhörande
+             bildkälla i <figcaption>-elementet.
+             Bildernas placering kommer senare styras med CSS.
+             Bilden har webboptimerats och har en
+             filstorlek på 72.8 kB. -->
+        <article>
+          <div class="recipe-description">
+            <h2 id="schackrutor">Schackrutor</h2>
+            <p>
+              Schackrutor är klassiska småkakor med ett dekorativt rutmönster av
+              ljus och chokladsmakande mördeg. Kakorna blir spröda och ser
+              mycket läckra ut på kakfatet. De imponerar med sitt utseende men
+              är väldigt enkla att baka.
+            </p>
+            <p><em>Ca 50 kakor</em></p>
+          </div>
+          <div class="recipe-layout">
+            <div class="recipe-images">
+              <figure>
+                <img
+                  src="bilder/schackrutor.jpg"
+                  alt="Schackrutor på ett kakfat."
+                />
+                <figcaption>Bilden är AI-genererad.</figcaption>
+              </figure>
+            </div>
+            <div class="recipe-content">
+              <div class="ingredients">
+                <h3>Ingredienser:</h3>
+                <ul>
+                  <li>200 g osaltat smör</li>
+                  <li>1 dl strösocker</li>
+                  <li>4,5 dl vetemjöl</li>
+                  <!-- Ingredienserna för ljus och mörk deg
+                       markeras med <strong> för att skilja dem åt. -->
+                  <li><strong>Ljus deg:</strong> 2 tsk vaniljsocker</li>
+                  <li><strong>Mörk deg:</strong> 2 msk kakao</li>
+                </ul>
+              </div>
+              <div class="instructions">
+                <h3>Gör så här:</h3>
+                <ol>
+                  <li>Ta fram smöret så att det hinner bli rumsvarmt.</li>
+                  <li>Vispa ihop smör och socker till en jämn smet.</li>
+                  <li>
+                    Tillsätt vetemjöl, lite i taget, och fortsätt röra tills det
+                    blir stora smulor.
+                  </li>
+                  <li>Dela degen i två lika stora delar.</li>
+                  <li>
+                    Arbeta in kakaon i den ena delen och vaniljsocker i den
+                    andra så att du får en ljus och en mörk deg.
+                  </li>
+                  <li>
+                    Dela degarna dem i två delar så du får två ljusa och två
+                    mörka delar.
+                  </li>
+                  <li>
+                    Rulla ut till längder och tryck till dem mot bakbordet så
+                    längderna får platta kanter. Lägg dem tätt ihop, med två
+                    ovanpå de andra så de bildar ett litet schackmönster.
+                  </li>
+                  <li>Låt vila i kylen 1-2 timmar.</li>
+                  <li>Sätt ugnen på 200 °C.</li>
+                  <li>Ta fram längden och skär ca 3–4 mm tjocka skivor.</li>
+                  <li>
+                    Lägg kakorna på en plåt med bakplåtspapper och grädda mitt i
+                    ugnen i ca 8–10 minuter.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <a href="#toppen" class="back-to-top">Tillbaka till toppen</a>
+        </article>
+        <!-- Här börjar receptet för drömmar.
+             Samma semantiska struktur som i föregående recept används.
+             Bilden har webboptimerats och har nu en filstorlek
+             på 92,9 kB. -->
+        <article>
+          <div class="recipe-description">
+            <h2 id="drommar">Drömmar</h2>
+            <p>
+              Drömmar är mycket spröda småkakor med mild vaniljsmak som är lätta
+              att baka. Hjorthornssalt gör att kakorna får sin karakteristiskt
+              porösa och ljuvligt frasiga konsistens.
+            </p>
+            <p><em>Ca 40-45 kakor</em></p>
+          </div>
+          <div class="recipe-layout">
+            <figure>
+              <img src="bilder/drommar.jpg" alt="Drömmar på en plåt." />
+              <figcaption>Bildkälla: Pexels.</figcaption>
+            </figure>
+            <div class="recipe-content">
+              <div class="ingredients">
+                <h3>Ingredienser:</h3>
+                <ul>
+                  <li>100 g smör</li>
+                  <li>3 dl strösocker</li>
+                  <li>1 dl rapsolja</li>
+                  <li>2 tsk vaniljsocker</li>
+                  <li>1 tsk hjorthornssalt</li>
+                  <li>4 dl vetemjöl</li>
+                </ul>
+              </div>
+              <div class="instructions">
+                <h3>Gör så här:</h3>
+                <ol>
+                  <li>Sätt ugnen på 150 °C.</li>
+                  <li>Rör smör och socker mjukt.</li>
+                  <li>Tillsätt oljan, lite i taget, under vispning.</li>
+                  <li>
+                    Blanda vaniljsocker och hjorthornssalt med lite av mjölet
+                    och rör ned blandningen i smeten. Tillsätt sedan resten av
+                    mjölet.
+                  </li>
+                  <li>
+                    Rulla små bollar av degen och lägg dem på plåtar med
+                    bakplåtspapper.
+                  </li>
+                  <li>
+                    Grädda mitt i ugnen i cirka 15-20 minuter och låt kallna på
+                    plåten.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <a href="#toppen" class="back-to-top">Tillbaka till toppen</a>
+        </article>
+        <!-- Här börjar receptet för finska pinnar.
+             Samma semantiska struktur som i föregående recept används.
+             Bilderna har webboptimerats och har nu en filstorlek
+             på 85.4 kB. -->
+        <article>
+          <div class="recipe-description">
+            <h2 id="finska-pinnar">Finska pinnar</h2>
+            <p>
+              Finska pinnar är spröda mördegskakor med mandel och pärlsocker på
+              toppen. Trots namnet är de en välkänd klassiker på svenska kakfat.
+            </p>
+            <p><em>Ca 60 kakor</em></p>
+          </div>
+          <div class="recipe-layout">
+            <div class="recipe-images">
+              <figure>
+                <img
+                  src="bilder/finska-pinnar.jpg"
+                  alt="Finska pinnar på en beige tallrik."
+                />
+                <figcaption>Bilden är AI-genererad.</figcaption>
+              </figure>
+            </div>
+            <div class="recipe-content">
+              <div class="ingredients">
+                <h3>Ingredienser:</h3>
+                <ul>
+                  <li>200 g smör</li>
+                  <li>1 dl strösocker</li>
+                  <li>4,5 dl vetemjöl</li>
+                  <li>1 tsk vaniljsocker</li>
+                  <li>1 dl mandelmjöl</li>
+                  <li>1 äggvita</li>
+                  <!-- Garneringen grupperas i en nästlad lista.
+                       <strong> ger underrubriken "garnering" fet stil. -->
+                  <li>
+                    <strong>Garnering:</strong>
+                    <ul>
+                      <li>Ca 1 dl hackad sötmandel</li>
+                      <li>2 msk pärlsocker</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="instructions">
+                <h3>Gör så här:</h3>
+                <ol>
+                  <li>Sätt ugnen på 175 °C.</li>
+                  <li>
+                    Blanda mandelmjöl, mjöl och socker och arbeta ihop med
+                    tärnat smör till en deg. Låt vila i kylskåp ca 30 minuter.
+                  </li>
+                  <li>
+                    Dela degen i 8 delar och rulla varje del till en 30 cm lång
+                    längd.
+                  </li>
+                  <li>Lägg längderna på en plåt med bakplåtspapper.</li>
+                  <li>Vispa upp äggvitan lätt och pensla längderna.</li>
+                  <li>
+                    Strö över hackad mandel och pärlsocker och dela längderna i
+                    ca 4 cm långa bitar. Sära bitarna lite så att de inte
+                    fastnar i varandra.
+                  </li>
+                  <li>Grädda mitt i ugnen i cirka 10-12 minuter.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <a href="#toppen" class="back-to-top">Tillbaka till toppen</a>
+        </article>
+        <!-- Här börjar receptet för chokladsnittar.
+             Samma semantiska struktur som i föregående recept används.
+             Bilden har webboptimerats och har nu en filstorlek
+             på 96,2 kB. -->
+        <article>
+          <div class="recipe-description">
+            <h2 id="chokladsnittar">Chokladsnittar</h2>
+            <p>
+              Chokladsnittar är spröda småkakor med smak av kakao och vanilj. De
+              toppas ofta med pärlsocker och är ett klassiskt inslag på
+              kakfatet.
+            </p>
+            <p>Ca 30 kakor</p>
+          </div>
+          <div class="recipe-layout">
+            <figure>
+              <img
+                src="bilder/chokladsnittar.jpg"
+                alt="Chokladsnittar på plåt."
+              />
+              <figcaption>Bilden är AI-genererad</figcaption>
+            </figure>
+            <div class="recipe-content">
+              <div class="ingredients">
+                <h3>Ingredienser:</h3>
+                <ul>
+                  <li>200 g smör</li>
+                  <li>2,5 dl strösocker</li>
+                  <li>5 dl vetemjöl</li>
+                  <li>4 msk kakao</li>
+                  <li>1 tsk bakpulver</li>
+                  <li>1 tsk vaniljsocker</li>
+                  <li>1 ägg till pensling</li>
+                  <li>Pärlsocker till garnering</li>
+                </ul>
+              </div>
+              <div class="instructions">
+                <h3>Gör så här:</h3>
+                <ol>
+                  <li>Sätt ugnen på 175 °C.</li>
+                  <li>Blanda smör och socker till en jämn smet.</li>
+                  <li>
+                    Tillsätt vetemjöl, kakao, bakpulver och vaniljsocker. Arbeta
+                    ihop till en deg.
+                  </li>
+                  <li>
+                    Dela degen i fyra delar och rulla ut dem till längder på en
+                    plåt med bakplåtspapper.
+                  </li>
+                  <li>
+                    Platta till längderna något, pensla med uppvispat ägg och
+                    strö över pärlsocker.
+                  </li>
+                  <li>Grädda mitt i ugnen i cirka 12–15 minuter.</li>
+                  <li>
+                    Skär längderna i sneda bitar medan de fortfarande är varma.
+                    Låt svalna.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <a href="#toppen" class="back-to-top">Tillbaka till toppen</a>
+        </article>
+        <!-- Här börjar receptet för havreflarn med choklad.
+             Samma semantiska struktur som i föregående recept används.
+             Bilden har webboptimerats och har nu en filstorlek
+             på 87,2 kB. -->
+        <article>
+          <div class="recipe-description">
+            <h2 id="havreflarn-med-choklad">Havreflarn med choklad</h2>
+            <p>
+              Havreflarn med choklad är tunna, spröda småkakor med smak av havre
+              och smör. Den mörka chokladen ger en god kontrast till de söta,
+              knapriga flarnen.
+            </p>
+            <p><em>Ca 25-30 kakor</em></p>
+          </div>
+          <div class="recipe-layout">
+            <figure>
+              <img
+                src="bilder/havreflarn-med-choklad.jpg"
+                alt="Havreflarn doppade i choklad på ett fat."
+              />
+              <figcaption>Bilden är AI-genererad.</figcaption>
+            </figure>
+            <div class="recipe-content">
+              <div class="ingredients">
+                <h3>Ingredienser:</h3>
+                <ul>
+                  <li>75 g smör</li>
+                  <li>2 dl havregryn</li>
+                  <li>1 dl strösocker</li>
+                  <li>1 dl vetemjöl</li>
+                  <li>1 tsk bakpulver</li>
+                  <li>1 ägg</li>
+                  <li>100 g mörk choklad</li>
+                </ul>
+              </div>
+              <div class="instructions">
+                <h3>Gör så här:</h3>
+                <ol>
+                  <li>Sätt ugnen på 175 °C.</li>
+                  <li>Smält smöret i en kastrull och låt svalna något.</li>
+                  <li>
+                    Blanda havregryn, strösocker, vetemjöl och bakpulver i en
+                    bunke.
+                  </li>
+                  <li>
+                    Tillsätt det smälta smöret och ägget. Rör ihop till en jämn
+                    smet.
+                  </li>
+                  <li>
+                    Klicka ut små mängder smet på en plåt med bakplåtspapper.
+                    Lämna ordentligt med mellanrum eftersom kakorna flyter ut.
+                  </li>
+                  <li>
+                    Grädda mitt i ugnen i cirka 7–10 minuter, tills flarnen fått
+                    gyllene färg.
+                  </li>
+                  <li>Låt kakorna svalna helt så att de blir spröda.</li>
+                  <li>Smält chokladen över vattenbad eller i mikrovågsugn.</li>
+                  <li>
+                    Doppa havreflarnet i chokladen så att halva flarnet är täckt
+                    och lägg på bakplåtspapper.
+                  </li>
+                  <li>Låt chokladen stelna innan kakorna serveras.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <a href="#toppen" class="back-to-top">Tillbaka till toppen</a>
+        </article>
+        <!-- Här avslutas sidans huvudinnehåll. -->
+      </main>
+      <!-- Avslutar sidans innehållscontainer. -->
+    </div>
+    <!-- Sidfoten avslutar webbsidan. -->
+    <footer class="site-footer">
+      <p>Sju sorters kakor - en receptsamling skapad som skoluppgift.</p>
+      <p>Student: Erika Carlsson</p>
+      <p>2026</p>
+    </footer>
+  </body>
+</html>

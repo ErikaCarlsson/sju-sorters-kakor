@@ -1,0 +1,359 @@
+/* =========================================
+   WEBBSIDANS GRUNDINSTÄLLNINGAR
+   Styr sidans färger, text och marginaler samt tar bort sidan standardmarginal.
+   ========================================= */
+
+body {
+  background-color: #fff1df;
+  color: #3c2118;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+}
+
+/* =========================================
+   SIDHUVUD OCH HUVUDMENY
+   Styr sidhuvudets utseende och placering, 
+   menylänkarna ändrar färg när man drar musen över dem.
+   ========================================= */
+
+.site-header {
+  background-color: #32190f;
+  color: #fff1df;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.site-name {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Georgia;
+}
+
+.main-menu {
+  display: flex;
+  gap: 25px;
+  margin-left: auto;
+}
+
+.main-menu a {
+  color: #fff1df;
+  text-decoration: none;
+}
+
+.main-menu a:hover {
+  color: #ad491e;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+/* =========================================
+   TOPPBILDEN (HERO)
+  Styr den stora bakgrundsbilden, text och knapp. 
+   ========================================= */
+
+.hero {
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(33, 18, 13, 0.65) 0%,
+      rgba(33, 18, 13, 0.4) 30%,
+      transparent 60%
+    ),
+    url("bilder/toppbild_AI_genrerad.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 80px;
+  position: relative;
+}
+
+#toppen {
+  scroll-margin-top: 150px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-family: Georgia;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff1df;
+}
+
+.hero p {
+  max-width: 600px;
+  line-height: 1.6;
+  color: #fff1df;
+  margin-top: 20px;
+}
+
+.hero .image-credit {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 12px;
+  color: #fff1df;
+  margin: 0;
+}
+
+.hero-button {
+  background-color: #ad491e;
+  color: #fff1df;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.hero-button:hover {
+  background-color: #913b20;
+}
+
+/* =========================================
+   SIDANS INNEHÅLLSYTA
+   Begränsar innehållets bredd och centrerar innehållet.
+   ========================================= */
+
+.site-container {
+  background-color: #fff1df;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   RECEPTMENYN MED RUNDA BILDER
+  Flexbox placerar de runda menybilderna bredvid varandra.
+   Bilderna har en zoomeffekt vid hover.
+   ========================================= */
+
+#recept {
+  color: #32190f;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 0 25px;
+  scroll-margin-top: 200px;
+}
+
+.recipe-navigation {
+  margin-bottom: 50px;
+}
+
+.recipe-navigation ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recipe-thumbnail {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.recipe-navigation a:hover .recipe-thumbnail {
+  transform: scale(1.05);
+}
+
+.recipe-navigation a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #32190f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recipe-navigation a:hover {
+  color: #ad491e;
+}
+
+.image-information {
+  font-size: 12px;
+  color: #6b3928;
+  text-align: right;
+  margin: 20px 0 0;
+}
+
+/* =========================================
+   RECEPTKORTEN
+   Varje recept visas i ett vitt kort med
+   rundade och anpassade bildstorlekar.
+   ========================================= */
+
+article {
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+article h2 {
+  font-size: 28px;
+  color: #6b3928;
+  margin-top: 0;
+}
+
+article img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 15px;
+}
+
+article figure {
+  margin: 0;
+}
+
+article[id],
+article h2[id] {
+  scroll-margin-top: 150px;
+}
+
+/* =========================================
+   BILDER OCH RECEPTTEXT BREDVID VARANDRA
+   Flexbox placerar bild och text bredvid varandra med mellanrum.
+   ========================================= */
+
+.recipe-layout {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.recipe-layout > figure {
+  flex: 0 0 350px;
+}
+
+.recipe-images {
+  flex: 0 0 350px;
+}
+
+.recipe-images figure {
+  margin-bottom: 15px;
+}
+
+/* =========================================
+   INGREDIENSER OCH INSTRUKTIONER
+ Flexbox placerar ingredienser och instruktioner bredvid varandra.
+   ========================================= */
+
+.recipe-content {
+  display: flex;
+  gap: 25px;
+  flex: 1;
+}
+
+.ingredients {
+  flex: 0 0 180px;
+}
+
+/* =========================================
+   TILLBAKA TILL TOPPEN
+   Styr knapparnas utseende och ändrar färg vid hover. 
+   ========================================= */
+
+.back-to-top {
+  display: inline-block;
+  background-color: #ad491e;
+  color: #fff1df;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.back-to-top:hover {
+  background-color: #913b20;
+}
+
+/* =========================================
+   TRE BILDER MELLAN RECEPTEN
+   Flexbox placerar bilderna bredvid varandra.
+   Styr bildernas utseende och bildtexter. 
+   ========================================= */
+
+.fika-images {
+  display: flex;
+  gap: 20px;
+  margin: 40px 0;
+  padding: 25px;
+  background-color: #f5ddc5;
+  border-radius: 15px;
+}
+
+.fika-images figure {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+.fika-images img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.fika-images figcaption {
+  text-align: center;
+  margin-top: 10px;
+  color: #32190f;
+  font-size: 12px;
+}
+
+/* =========================================
+   SIDFOT
+   Styr sidfotens färger, textplacering och avstånd. 
+   ========================================= */
+
+.site-footer {
+  background-color: #32190f;
+  color: #fff1df;
+  text-align: center;
+  padding: 30px;
+}
+
+.site-footer p {
+  margin: 10px 0;
+}
+
+.site-footer a {
+  color: #fff1df;
+  text-decoration: none;
+}
